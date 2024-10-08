@@ -1,0 +1,35 @@
+.left-section {
+    -fx-background-color: #aa7733; /* Brown background */
+    -fx-padding: 10;
+}
+
+.right-section {
+    -fx-background-color: #79dc05; /* Green background */
+    -fx-padding: 10;
+}
+
+.image-label {
+    -fx-text-fill: white; /* Change to desired color */
+}
+
+.action-button {
+    -fx-background-color: #aa7733; /* Button color */
+    -fx-text-fill: black; /* Button text color */
+    /*-fx-padding: 5 10; /* Padding for the buttons */
+    -fx-font-size: 14px; /* Font size for buttons */
+}
+
+/* Style for TableView */
+.table-view {
+    /*-fx-border-color: #999999; /* Add border to TableView */
+    -fx-border-width: 2;
+    -fx-text-fill: white; /* text color */
+
+}
+
+/* Style for TableColumn headers */
+.table-view .column-header {
+    -fx-background-color: #999999; /* Header background */
+    -fx-text-fill: white; /* Header text color */
+}
+

@@ -1,16 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.Insets?> <!-- Importing Insets for spacing -->
+<?import javafx.scene.control.*?> <!-- Importing all control elements (Label, Button, TextField, etc.) -->
+<?import javafx.scene.image.ImageView?> <!-- Importing ImageView for displaying images -->
+<?import javafx.scene.layout.*?> <!-- Importing layout elements (VBox, HBox, AnchorPane, etc.) -->
+<?import javafx.scene.paint.Color?> <!-- Importing Color for styling (if needed) -->
 
-<?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="sabrina.gui_sabrina.MainController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+<!-- AnchorPane is the root layout of the FXML file -->
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="sabrina.gui_sabrina.MainController">
+    <children>
+        <!-- Left Section for User Image -->
+        <VBox alignment="CENTER" prefWidth="150" prefHeight="400" styleClass="left-section" spacing="10">
+            <ImageView fx:id="userImage" fitHeight="100" fitWidth="100" /> <!-- ImageView for displaying the user's image -->
+            <Label text="User Image" styleClass="image-label" /> <!-- Label below the image -->
+        </VBox>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+        <!-- Center Section for TableView -->
+        <TableView fx:id="tableView" layoutX="150" layoutY="10" prefWidth="400" prefHeight="400">
+            <columns>
+                <TableColumn text="ID" /> <!-- Column for ID -->
+                <TableColumn text="First Name" /> <!-- Column for First Name -->
+                <TableColumn text="Last Name" /> <!-- Column for Last Name -->
+                <TableColumn text="Department" /> <!-- Column for Department -->
+                <TableColumn text="Major" /> <!-- Column for Major -->
+                <TableColumn text="Email" /> <!-- Column for Email -->
+            </columns>
+        </TableView>
+
+        <!-- Right Section for Input Fields and Action Buttons -->
+        <VBox alignment="TOP_CENTER" layoutX="560" prefWidth="250" prefHeight="400" styleClass="right-section" spacing="10">
+            <TextField promptText="First Name" /> <!-- TextField for entering First Name -->
+            <TextField promptText="Last Name" /> <!-- TextField for entering Last Name -->
+            <TextField promptText="Department" /> <!-- TextField for entering Department -->
+            <TextField promptText="Major" /> <!-- TextField for entering Major -->
+            <TextField promptText="Email" /> <!-- TextField for entering Email -->
+            <TextField promptText="imageURL" /> <!-- TextField for entering Image URL -->
+
+            <!-- VBox for arranging buttons horizontally -->
+            <VBox spacing="10" alignment="CENTER">
+                <Button text="Clear" styleClass="action-button" prefWidth="250" prefHeight="200"/> <!-- Button to clear input fields -->
+                <Button text="Add" styleClass="action-button" prefWidth="250" prefHeight="200"/> <!-- Button to add an entry -->
+                <Button text="Delete" styleClass="action-button" prefWidth="250" prefHeight="200"/> <!-- Button to delete an entry -->
+                <Button text="Edit" styleClass="action-button" prefWidth="250" prefHeight="200"/> <!-- Button to edit an entry -->
+            </VBox>
+        </VBox>
+    </children>
+</AnchorPane>
