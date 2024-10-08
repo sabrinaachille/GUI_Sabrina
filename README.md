@@ -1,22 +1,45 @@
-🌟 JavaFX User Management Application 🌟
-Welcome to the JavaFX User Management Application! 🎉 This project is part of my Software Engineering course (CSC 325) and showcases my skills in building a user-friendly GUI using JavaFX.
+Software Engineering course (CSC 325)
 
-📖 Project Overview
-This application allows users to manage their data through a simple and intuitive interface. You can add, delete, edit, and clear user entries, making it easy to maintain a list of users! 📝
+Develop a user interface with menus, menu items, and a TableView using JavaFX and CSS, replicating the provided design.
 
-🎨 Features
-👤 User Image Display: Show off your user profile image!
-📊 TableView: View user data like ID, First Name, Last Name, Department, Major, and Email in a neat table format.
-🖊️ Input Fields: Easily enter or update user details with dedicated text fields.
-🛠️ Action Buttons: Clear, Add, Delete, and Edit user entries with just a click!
-🛠️ Technologies Used
+Analyze Design:
+
+Carefully examine the attached image to identify:
+Layout structure, including menus, menu items, TableView, and other controls
+Visual elements and their arrangement
+Spacing, proportions, alignment, and color scheme.
+
+Create JavaFX Structure:
+
+Use the following JavaFX classes:
+MenuBar, Menu, MenuItem for menu components
+TableView, TableColumn for the TableView
+Other appropriate classes for layout and controls
+Organize elements within a Scene and Stage.
+
+Apply CSS Styling:
+Create a CSS file and link it to your application.
+Style elements to match the design, paying attention to:
+Menu styling (background, text color, font, spacing)
+TableView styling (headers, rows, columns, borders, selection)
+Overall visual consistency
+
+Version Control with Git:
+Push your code into GitHub.
+
+Submit to GitHub:
+Share the GitHub URL as your submission.
+
+Technologies Used
 JavaFX: For creating the user interface.
 FXML: For defining the layout in a structured way.
 CSS: To style the application and enhance its visual appeal.
-📂 Project Structure
+
+Project Structure
 markdown
 Copy code
 - src
+  - image
   - main
     - java
       - sabrina.gui_sabrina
@@ -27,12 +50,3 @@ Copy code
         - Main.fxml
       - css
         - styles.css
-🚀 Getting Started
-Clone this repository:
-
-bash
-Copy code
-git clone <repository-url>
-Open the project in your favorite IDE (like IntelliJ IDEA!).
-
-Run the Main.java file to start the application.
