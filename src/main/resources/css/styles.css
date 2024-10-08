@@ -21,8 +21,8 @@
 
 /* Style for TableView */
 .table-view {
-    /*-fx-border-color: #999999; /* Add border to TableView */
-    -fx-border-width: 2;
+    -fx-background-color: white;
+    -fx-border-width: 5;
     -fx-text-fill: white; /* text color */
 
 }
@@ -32,4 +32,10 @@
     -fx-background-color: #999999; /* Header background */
     -fx-text-fill: white; /* Header text color */
 }
+
+/* Profile image for left section
+.left-section{
+    -fx-background-image: url(325-user-profile .png);
+}
+*/
 

@@ -28,7 +28,7 @@
         </TableView>
 
         <!-- Right Section for Input Fields and Action Buttons -->
-        <VBox alignment="TOP_CENTER" layoutX="560" prefWidth="250" prefHeight="400" styleClass="right-section" spacing="10">
+        <VBox alignment="TOP_CENTER" layoutX="560" prefWidth="200" prefHeight="400" styleClass="right-section" spacing="10">
             <TextField promptText="First Name" /> <!-- TextField for entering First Name -->
             <TextField promptText="Last Name" /> <!-- TextField for entering Last Name -->
             <TextField promptText="Department" /> <!-- TextField for entering Department -->
