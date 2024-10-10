@@ -18,7 +18,7 @@ public class Main extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("/sabrina/gui_sabrina/Main.fxml"));
 
         // Create a Scene with the loaded root node and set its dimensions
-        Scene scene = new Scene(root, 600, 400);
+        Scene scene = new Scene(root);
 
         // Link the CSS stylesheet to the scene for styling
         scene.getStylesheets().add(getClass().getResource("/css/styles.css").toExternalForm());
